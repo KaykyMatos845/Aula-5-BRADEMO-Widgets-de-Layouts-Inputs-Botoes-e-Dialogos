@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'exercicio2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,15 +12,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Exercício GridView',
+      title: 'Exercícios Brademo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const GridViewExercise(),
+      home: const Exercicio2(),
     );
   }
 }
+
 class GridItem {
   final String location;
   final String name;
@@ -71,9 +73,7 @@ class GridViewExercise extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Exercício GridView'),
-      ),
+      appBar: AppBar(title: const Text('Exercício 1 - GridView')),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
@@ -94,19 +94,13 @@ class GridViewExercise extends StatelessWidget {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.network(
-                    item.imageUrl,
-                    fit: BoxFit.cover,
-                  ),
+                  Image.network(item.imageUrl, fit: BoxFit.cover),
                   Container(
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.transparent,
-                          Colors.black87,
-                        ],
+                        colors: [Colors.transparent, Colors.black87],
                         stops: [0.5, 1.0],
                       ),
                     ),
@@ -144,7 +138,3 @@ class GridViewExercise extends StatelessWidget {
     );
   }
 }
-
-
-
-

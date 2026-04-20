@@ -3,6 +3,7 @@ import 'exercicio2.dart';
 import 'exercicio3.dart';
 import 'exercicio4.dart';
 import 'exercicio5.dart';
+import 'exercicio6.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const Exercicio5(),
+      home: const Exercicio6(),
     );
   }
 }

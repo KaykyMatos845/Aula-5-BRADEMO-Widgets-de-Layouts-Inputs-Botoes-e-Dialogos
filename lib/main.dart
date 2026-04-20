@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'exercicio2.dart';
 import 'exercicio3.dart';
 import 'exercicio4.dart';
+import 'exercicio5.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const Exercicio4(),
+      home: const Exercicio5(),
     );
   }
 }
